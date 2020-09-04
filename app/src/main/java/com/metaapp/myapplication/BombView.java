@@ -190,23 +190,6 @@ public class BombView extends SurfaceView implements SurfaceHolder.Callback {
         if (mBubbles.size() <= 0) {
             release();
         }
-//        else {
-//            /*
-//              大爱心放大消失
-//             */
-//            mFuseView.scale += 0.2;
-//            /*
-//              ps:85 = 255/3 根据缩放倍数来计算透明度
-//             */
-//            mFuseView.alpha = (int) (85 + (255 - 85) * (1 - mBombDistanceY / mBombRangY));
-//            if (mFuseView.alpha > 0) {
-//                mPaint.setAlpha(mFuseView.alpha);
-//                canvas.save();
-//                canvas.scale(mFuseView.scale, mFuseView.scale, mFuseView.x + mFuseView.bitmap.getWidth() / 2F, mFuseView.y + mFuseView.bitmap.getHeight() / 2F);
-//                canvas.drawBitmap(mFuseView.bitmap, mFuseView.x, mFuseView.y, mPaint);
-//                canvas.restore();
-//            }
-//        }
     }
 
     /**
